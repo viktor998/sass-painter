@@ -1,0 +1,57 @@
+@import './jumbo';
+
+header{
+    
+
+    .bg-black{
+        background-color: $dark;
+
+
+        .container{
+            height: 80px;
+            
+    
+            nav{
+                height: 100%;
+                .top{
+                    height: 50%;
+                }
+                .bottom{
+
+
+                ul{
+                    list-style: none;
+                    @include flex-center;
+    
+                    li{
+                        color: $header_text_color;
+                        margin:  0 15px;
+                        font-size: $fs-1;
+
+                        &.logo{
+                            font-size: $fs-4;
+                        }
+    
+                        &.arrow-down::after{
+                            font-family: "Font Awesome 5 Free"; 
+                            font-weight: 900; 
+                            content: "\f107";
+                            padding:0 5px;
+    
+                            
+                        }
+    
+                        &.arrow-down:hover{
+                            cursor: pointer;
+                        }
+
+                    }
+    
+                    
+                }
+                }
+            }
+        }
+
+    }
+}

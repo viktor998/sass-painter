@@ -1,0 +1,44 @@
+.jumbtron{
+    position: relative;
+}
+
+.jumbtron img{
+    width: 100vw;
+    
+}
+
+.container{
+    img{
+        width: 160px;
+    }
+    .jumbtron-txt{
+        width: 370px;
+        z-index: 1;
+        position: absolute;
+        top: 70px;
+
+        h4{
+            margin-top: 20px;
+        }
+
+        button{
+            padding: 10px 20px;
+            text-transform: uppercase;
+            margin: 40px 5px;
+            border: 2px solid black;
+            letter-spacing: 2px;
+
+            &.black{
+                background-color: $dark;
+                color: $header_text_color;
+                margin-left: -5px;
+            }
+
+            &.black-reverse{
+                
+                background-color: transparent;
+
+            }
+        }
+    }
+}
