@@ -5,10 +5,98 @@
   box-sizing: border-box;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .container {
   width: 70%;
   height: 100%;
   margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.font-size-1 {
+  font-size: 0.75em;
+}
+
+.font-size-2 {
+  font-size: 1em;
+}
+
+.font-size-3 {
+  font-size: 1.5em;
+}
+
+.font-size-4 {
+  font-size: 2em;
+}
+
+.mt-1 {
+  margin-top: 0.5em;
+}
+
+.mt-2 {
+  margin-top: 1em;
+}
+
+.mt-3 {
+  margin-top: 1.5em;
+}
+
+.mt-4 {
+  margin-top: 2em;
+}
+
+.mb-1 {
+  margin-bottom: 0.5em;
+}
+
+.mb-2 {
+  margin-bottom: 1em;
+}
+
+.mb-3 {
+  margin-bottom: 1.5em;
+}
+
+.mb-4 {
+  margin-bottom: 2em;
+}
+
+.pt-1 {
+  padding-top: 0.5em;
+}
+
+.pt-2 {
+  padding-top: 1em;
+}
+
+.pt-3 {
+  padding-top: 1.5em;
+}
+
+.pt-4 {
+  padding-top: 2em;
+}
+
+.pb-1 {
+  padding-bottom: 0.5em;
+}
+
+.pb-2 {
+  padding-bottom: 1em;
+}
+
+.pb-3 {
+  padding-bottom: 1.5em;
+}
+
+.pb-4 {
+  padding-bottom: 2em;
 }
 
 .jumbtron {
@@ -31,19 +119,22 @@
 .container .jumbtron-txt h4 {
   margin-top: 20px;
 }
-.container .jumbtron-txt button {
+.container .jumbtron-txt .pinky {
+  color: #ff0eaf;
+}
+.container .jumbtron-txt input {
   padding: 10px 20px;
   text-transform: uppercase;
   margin: 40px 5px;
   border: 2px solid black;
   letter-spacing: 2px;
 }
-.container .jumbtron-txt button.black {
+.container .jumbtron-txt input.black {
   background-color: black;
   color: white;
   margin-left: -5px;
 }
-.container .jumbtron-txt button.black-reverse {
+.container .jumbtron-txt input.black-reverse {
   background-color: transparent;
 }
 
@@ -62,7 +153,7 @@ header .bg-black .container nav .top {
 header .bg-black .container nav .bottom ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -72,6 +163,7 @@ header .bg-black .container nav .bottom ul li {
   font-size: 0.75em;
 }
 header .bg-black .container nav .bottom ul li.logo {
+  margin-left: -5px;
   font-size: 2em;
 }
 header .bg-black .container nav .bottom ul li.arrow-down::after {
@@ -82,4 +174,158 @@ header .bg-black .container nav .bottom ul li.arrow-down::after {
 }
 header .bg-black .container nav .bottom ul li.arrow-down:hover {
   cursor: pointer;
+}
+
+.links .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+.links .container ul {
+  list-style: none;
+}
+.links .container ul li a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.767);
+  line-height: 1.5;
+}
+.links .container .last-links {
+  display: flex;
+  flex-direction: column;
+}
+.links .container .last-links span a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.767);
+  line-height: 1.5;
+}
+.links .container .social {
+  margin-left: auto;
+  justify-self: flex-end;
+}
+.links .container .social i {
+  margin: 0 3px;
+  padding: 6px 6px;
+  color: white;
+}
+.links .container .social .fa-instagram {
+  background-color: palevioletred;
+}
+.links .container .social .fa-facebook-f {
+  padding: 6px 9px;
+  background-color: blue;
+}
+.links .container .social .fa-twitter {
+  background-color: blue;
+}
+.links .container .social .fa-youtube {
+  background-color: red;
+}
+.links .container .social .fa-pinterest-p {
+  background-color: red;
+}
+.links .container .social .fa-rss {
+  background-color: orange;
+}
+
+main {
+  margin: -5px;
+  background-color: #ebebeb;
+}
+main section .container .card {
+  display: flex;
+}
+main section .container .card-1, main section .container .card-2, main section .container .card-3 {
+  margin: 10px;
+  width: calc(100%/3 - 10px);
+  height: 300px;
+  background-color: white;
+}
+main section .container .card-1 h4, main section .container .card-1 p, main section .container .card-1 a, main section .container .card-2 h4, main section .container .card-2 p, main section .container .card-2 a, main section .container .card-3 h4, main section .container .card-3 p, main section .container .card-3 a {
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+main section .container .card-1 a, main section .container .card-2 a, main section .container .card-3 a {
+  color: #14a9ff;
+  text-decoration: none;
+}
+main section .container .card-1 img, main section .container .card-2 img, main section .container .card-3 img {
+  width: 100%;
+}
+main section .products {
+  padding: 50px 10px;
+  width: 100%;
+}
+main section .products-card-1, main section .products-card-2, main section .products-card-3 {
+  height: 250px;
+  display: flex;
+}
+main section .products-card-1 .left, main section .products-card-1 .right, main section .products-card-2 .left, main section .products-card-2 .right, main section .products-card-3 .left, main section .products-card-3 .right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+main section .products-card-1 .left .overlay-img, main section .products-card-1 .right .overlay-img, main section .products-card-2 .left .overlay-img, main section .products-card-2 .right .overlay-img, main section .products-card-3 .left .overlay-img, main section .products-card-3 .right .overlay-img {
+  position: absolute;
+  width: 350px;
+}
+main section .products-card-1 .left img, main section .products-card-1 .right img, main section .products-card-2 .left img, main section .products-card-2 .right img, main section .products-card-3 .left img, main section .products-card-3 .right img {
+  width: 100%;
+  height: 100%;
+}
+main section .products-card-1 .left h4, main section .products-card-1 .left p, main section .products-card-1 .left a, main section .products-card-1 .right h4, main section .products-card-1 .right p, main section .products-card-1 .right a, main section .products-card-2 .left h4, main section .products-card-2 .left p, main section .products-card-2 .left a, main section .products-card-2 .right h4, main section .products-card-2 .right p, main section .products-card-2 .right a, main section .products-card-3 .left h4, main section .products-card-3 .left p, main section .products-card-3 .left a, main section .products-card-3 .right h4, main section .products-card-3 .right p, main section .products-card-3 .right a {
+  color: white;
+  margin: 15px 30px;
+}
+main section .products-card-1 .left a, main section .products-card-1 .right a, main section .products-card-2 .left a, main section .products-card-2 .right a, main section .products-card-3 .left a, main section .products-card-3 .right a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: small;
+  color: black;
+  padding: 5px 15px;
+  background-color: white;
+}
+main section .products-card-1 .left {
+  background-color: #3f0069;
+}
+main section .products-card-2 .right {
+  background-color: #303030;
+}
+main section .products-card-3 .left {
+  background-color: #0365c0;
+}
+
+footer {
+  height: 80px;
+  padding-bottom: -15px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+footer .loghi {
+  padding: 10px;
+  padding-bottom: 0;
+}
+footer .loghi img {
+  padding: 0 10px;
+}
+footer .terms {
+  width: 50%;
+}
+footer .terms ul {
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .terms ul li a {
+  color: white;
+  text-decoration: none;
 }

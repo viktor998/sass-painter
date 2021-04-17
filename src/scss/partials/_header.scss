@@ -1,7 +1,6 @@
 @import './jumbo';
 
 header{
-    
 
     .bg-black{
         background-color: $dark;
@@ -24,11 +23,13 @@ header{
                     @include flex-center;
     
                     li{
+
                         color: $header_text_color;
                         margin:  0 15px;
                         font-size: $fs-1;
 
                         &.logo{
+                            margin-left: -5px;
                             font-size: $fs-4;
                         }
     

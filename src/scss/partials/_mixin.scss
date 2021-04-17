@@ -6,7 +6,21 @@
 
 @mixin flex-center{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+@mixin flex-left-center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+@mixin flex-center-around{
+    display: flex;
+    justify-content: space-around;
+
     flex-wrap: wrap;
 }

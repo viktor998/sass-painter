@@ -1,0 +1,63 @@
+.links{
+    .container{
+        @include flex-center-around;
+        padding: 0 15px;
+        ul{
+            list-style: none;
+
+            & li a{
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.767);
+                line-height: 1.5;
+            }
+        }
+
+        .last-links{
+            display: flex;
+            flex-direction: column;
+            
+            span a{
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.767);
+                line-height: 1.5;
+            }
+        }
+
+        .social{
+            margin-left: auto;
+            justify-self: flex-end;
+            
+            & i{
+                margin: 0 3px;
+                padding: 6px 6px;
+                color: white;
+            }
+
+            .fa-instagram{
+                
+                background-color: palevioletred;
+            }
+
+            .fa-facebook-f{
+                padding: 6px 9px;
+                background-color: blue;
+            }
+
+            .fa-twitter{
+                background-color: blue;
+            }
+
+            .fa-youtube{
+                background-color: red;
+            }
+
+            .fa-pinterest-p{
+                background-color: red;
+            }
+
+            .fa-rss{
+                background-color: orange;
+            }
+        }
+    }
+}

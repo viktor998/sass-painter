@@ -1,0 +1,31 @@
+footer{
+    height: 80px;
+    padding-bottom: -15px;
+    background-color: black;
+    @include flex-center-around;
+
+    .loghi{
+        padding: 10px;
+        padding-bottom: 0;
+
+        img{
+            padding: 0 10px;
+        }
+    }
+
+    .terms{
+        width: 50%;
+        
+        ul{
+            height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            li a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
