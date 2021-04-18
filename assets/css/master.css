@@ -1,8 +1,10 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap);
 @charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
@@ -148,19 +150,28 @@ header .bg-black .container nav {
   height: 100%;
 }
 header .bg-black .container nav .top {
-  height: 50%;
+  height: 30%;
+}
+header .bg-black .container nav .bottom {
+  height: 70%;
 }
 header .bg-black .container nav .bottom ul {
+  height: 100%;
   list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  padding-bottom: 10px;
 }
 header .bg-black .container nav .bottom ul li {
+  padding-top: 10px;
   color: white;
   margin: 0 15px;
   font-size: 0.75em;
+}
+header .bg-black .container nav .bottom ul li:hover {
+  cursor: pointer;
 }
 header .bg-black .container nav .bottom ul li.logo {
   margin-left: -5px;
@@ -172,9 +183,6 @@ header .bg-black .container nav .bottom ul li.arrow-down::after {
   content: "";
   padding: 0 5px;
 }
-header .bg-black .container nav .bottom ul li.arrow-down:hover {
-  cursor: pointer;
-}
 
 .links .container {
   display: flex;
@@ -182,13 +190,21 @@ header .bg-black .container nav .bottom ul li.arrow-down:hover {
   flex-wrap: wrap;
   padding: 0 15px;
 }
+.links .container:first-child {
+  margin-right: auto;
+  justify-self: left;
+}
 .links .container ul {
   list-style: none;
 }
 .links .container ul li a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.767);
-  line-height: 1.5;
+  line-height: 2;
+  font-size: 0.85em;
+}
+.links .container ul li a:hover {
+  color: blue;
 }
 .links .container .last-links {
   display: flex;
@@ -197,7 +213,11 @@ header .bg-black .container nav .bottom ul li.arrow-down:hover {
 .links .container .last-links span a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.767);
-  line-height: 1.5;
+  line-height: 2;
+  font-size: 0.85em;
+}
+.links .container .last-links span a:hover {
+  color: blue;
 }
 .links .container .social {
   margin-left: auto;
@@ -282,6 +302,10 @@ main section .products-card-1 .left img, main section .products-card-1 .right im
 main section .products-card-1 .left h4, main section .products-card-1 .left p, main section .products-card-1 .left a, main section .products-card-1 .right h4, main section .products-card-1 .right p, main section .products-card-1 .right a, main section .products-card-2 .left h4, main section .products-card-2 .left p, main section .products-card-2 .left a, main section .products-card-2 .right h4, main section .products-card-2 .right p, main section .products-card-2 .right a, main section .products-card-3 .left h4, main section .products-card-3 .left p, main section .products-card-3 .left a, main section .products-card-3 .right h4, main section .products-card-3 .right p, main section .products-card-3 .right a {
   color: white;
   margin: 15px 30px;
+  font-weight: lighter;
+}
+main section .products-card-1 .left h4, main section .products-card-1 .right h4, main section .products-card-2 .left h4, main section .products-card-2 .right h4, main section .products-card-3 .left h4, main section .products-card-3 .right h4 {
+  font-size: 1.5em;
 }
 main section .products-card-1 .left a, main section .products-card-1 .right a, main section .products-card-2 .left a, main section .products-card-2 .right a, main section .products-card-3 .left a, main section .products-card-3 .right a {
   text-decoration: none;
@@ -326,6 +350,10 @@ footer .terms ul {
   justify-content: space-around;
 }
 footer .terms ul li a {
+  font-size: 0.75em;
   color: white;
   text-decoration: none;
+}
+footer .terms ul li a.grey {
+  color: #292929;
 }
